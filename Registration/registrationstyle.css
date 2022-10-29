@@ -1,0 +1,57 @@
+body{
+    background-color:rgba(197, 183, 61, 0.5);   
+}
+
+.arrow { text-align:left;}
+
+h2 {text-align: center; color: white }
+
+.rcorners1{      
+    border-radius: 25px;
+    background: rgba(229, 229, 229, 0.72);
+    margin: auto;
+    /*margin-bottom: 20px;*/
+    padding: 50px; 
+    width: 550px;
+    height: 500px;  
+}
+
+.leftside{
+    float:left;
+    width:275px;
+}
+
+
+
+.rightside{
+    float:right;
+    width: 275px;
+}
+
+
+#namebar, #addressbar, #statebar, #paymentbar, #CVVbar, #emailbar, #zipcodebar, #expbar{
+    background: white;
+    /*margin: auto; */
+    border-radius: 50px;
+    width: 200px;
+    height: 20px; 
+}
+
+
+.submittext{
+
+    float: left;
+    background-color: #810B0B; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    /*margin: 4px 2px;*/
+    cursor: pointer;
+    border-radius: 12px;
+   
+}
+

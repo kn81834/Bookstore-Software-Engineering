@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Shopping Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css"
+    />
+    <link rel="stylesheet" href="newShoppingCart.css" />
+    <script
+      src="https://kit.fontawesome.com/a746b8874d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#footer").load("../Footer/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--nav bar-->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand navbar-light">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.jpg"
+            height="50"
+        /></a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-4">
+              <a href="#" class="nav-link py-4">Textbooks</a>
+            </li>
+            <li class="nav-item px-4">
+              <a href="#" class="nav-link py-4">Adults</a>
+            </li>
+            <li class="nav-item px-4">
+              <a href="#" class="nav-link py-4">Teens</a>
+            </li>
+            <li class="nav-item px-4">
+              <a href="#" class="nav-link py-4">Kids</a>
+            </li>
+            <div class="dropdown">
+              <li class="nav-item px-4">
+                <a href="#" class="nav-link py-4">
+                  <!--Trigger-->
+
+                  <a
+                    class="btn-floating btn-lg black dropdown-toggle"
+                    type="button"
+                    id="dropdownMenu3"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    data-target="#navItem"
+                    ><i class="fas fa-user fa-2x" style="color: grey"></i
+                  ></a>
+                  <!--Menu-->
+                  <div class="dropdown-menu dropdown-primary" id="navItem">
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      id="login"
+                      data-toggle="modal"
+                      data-target="#loginModal"
+                      >Login/Sign Up</a
+                    >
+                    <a class="dropdown-item" href="#">Edit Profile</a>
+                    <a class="dropdown-item" href="#">Order History</a>
+                  </div>
+                </a>
+              </li>
+            </div>
+            <li class="nav-item px-4">
+              <a href="#" class="nav-link py-4"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--end of nav bar-->
+
+    <div class="pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 p-5 bg-white rounded shadow mb-5">
+            <!-- Shopping cart table -->
+            <h2>Shopping Cart</h2>
+            <h5 id="numOfItems"></h5>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="bg-light">
+                      <div class="p-2 px-3 text-uppercase">Product</div>
+                    </th>
+                    <th scope="col" class="bg-light">
+                      <div class="py-2 text-uppercase">Price</div>
+                    </th>
+                    <th scope="col" class="bg-light">
+                      <div class="py-2 text-uppercase">Quantity</div>
+                    </th>
+                    <th scope="col" class="bg-light">
+                      <div class="py-2 text-uppercase">Remove</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?for ($i = 0; $i < sizeof($_SESSION['Cart']); $i++) :?>
+                  <tr>
+                    <th scope="row">
+                      <div class="p-2">
+                        <img
+                          src="<?= $item['pic']; ?>"
+                          alt=""
+                          width="70"
+                          class="img-fluid rounded shadow"
+                        />
+                        <div class="ml-3 d-inline-block align-middle">
+                          <h5 class="mb-0">
+                            <a
+                              href="#"
+                              class="text-dark d-inline-block align-middle"
+                              ><?= $item['book']; ?></a
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle">
+                      <strong><?= $item['price']; ?></strong>
+                    </td>
+                    <td class="align-middle">
+                      <select id="leaveCode" name="leaveCode">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+                      <script>
+                        //selectElement('leaveCode', '<?= $item['quantity']; ?>');
+                        //function selectElement(id, valueToSelect) {
+                        //    let element = document.getElementById(id);
+                        //    element.value = valueToSelect;
+                        //}
+                      </script>
+                    </td>
+                    <td class="align-middle">
+                      <a href="#" class="text-dark"
+                        ><i class="fa fa-trash"></i
+                      ></a>
+                    </td>
+                  </tr>
+
+                  <?php endfor; ?>
+                </tbody>
+              </table>
+
+              <div class="btm" style="float: right">
+                <h5 id="subtotal"></h5>
+                <script>
+                  //var subtotal = 0;
+                  //for (int i = 0; i <sizeof($_SESSION['Cart']); i++) {
+                  //    subtotal += $_SESSION['Cart'][$i]['product'] * $_SESSION['Cart'][$i]['Quantity'];
+                  //}
+                  document.getElementById("subtotal").innerHTML =
+                    "subtotal will go here";
+                </script>
+              </div>
+              <script>
+                var items = $i;
+                document.getElementById("numOfItems").innerHTML =
+                  "(" + items + ")" + " in your shopping cart";
+              </script>
+            </div>
+            <!-- End -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
