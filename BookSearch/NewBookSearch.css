@@ -1,0 +1,298 @@
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.dropdown .dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.btn-group .form-horizontal .btn[type="submit"] {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.nav-item {
+    font-size: 1.3rem;
+}
+
+.mycol {
+    border: 1px solid black;
+    background-color: black;
+}
+
+* {
+    text-align: center;
+    /*          font-family: Arial, Helvetica, sans-serif;
+*/
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.card {
+    border: none;
+    background: #D6D1B1;
+}
+
+.search {
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: 20px;
+    height: 50px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    margin-top: 5px;
+    caret-color: transparent;
+    line-height: 20px;
+    transition: width 0.4s linear;
+}
+
+.search .search-input {
+    padding: 0 10px;
+    width: 100%;
+    caret-color: #536bf6;
+    font-size: 19px;
+    font-weight: 300;
+    color: black;
+    transition: width 0.4s linear;
+}
+
+.search-icon {
+    height: 34px;
+    width: 34px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #536bf6;
+    font-size: 10px;
+    bottom: 30px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.dropdown-toggle {
+    height: 34px;
+    width: 34px;
+    float: left;
+    display: flex;
+    /*        background-color: #536bf6;
+*/
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    bottom: 30px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.search-icon:hover {
+    color: #fff !important;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.card-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    border: none;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.card-inner:hover {
+    transform: scale(1.1);
+}
+
+.mg-text span {
+    font-size: 12px;
+}
+
+.mg-text {
+    line-height: 14px;
+}
+
+.btn-default {
+    background-color: #E0DEDE;
+    margin-left: 5px;
+}
+
+.features {
+    margin-top: 50px;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url("https://s.abcnews.com/images/Technology/GTY_woman_reading_book_jt_140112_16x9_992.jpg");
+
+    /* Set a specific height */
+    height: 60%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.outside {
+    border-left: 1px solid
+        /*#a52a2a*/
+        black;
+    border-right: 1px solid black;
+}
+
+.b {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.b span {
+    background: #ECEEEF;
+    padding: 0 10px;
+}
+
+.b2 {
+    width: 94%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.b2 span {
+    background: #faf0e6;
+    padding: 0 10px;
+}
+
+table {
+
+    width:100%
+}
+
+tbody:before {
+    content:"@";
+    display:block;
+    line-height:10px;
+    text-indent:-99999px;
+}
+
+.footer{
+
+    
+    height: 300px;
+    position: relative;
+
+}
+
+.footer .footer-content{
+    height: 250px;
+    display: flex;
+    
+
+}
+
+.footer .footer-content .footer-section{
+    flex:1;
+ 
+    padding: 25px;
+}
+
+.footer .footer-bottom{
+    text-align: center;
+    height: 50px;
+    position: relative;
+    bottom: 0px;
+    left:0px;
+    padding-top: 20px;
+    width:100%
+
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: pink;}

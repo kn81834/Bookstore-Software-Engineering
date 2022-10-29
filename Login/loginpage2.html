@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books-R-Us</title>
+    <link rel="stylesheet" href="loginstyle.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+  
+
+    <div style="display: inline-block; width: 100%">
+      <img
+        src="arrow.png"
+        class="arrow"
+        width="30"
+        height="30"
+        style="float: left"
+      />
+      <h2>Bookstore <img src="book.png" width="19" height="25" /></h2>
+    </div>
+
+    <div class="rcorners1">
+      <div class="leftside"> <!--login title-->
+        <p id="login">
+          <b>Login <img src="user.png" width="19" height="19" /></b>
+        </p>
+        <p id="extra1" style="font-size: 10px; text-align: center" ;>
+          New User? Sign up for an account.
+        </p>
+      </div>
+
+      <div class="rightside"> <!--login input-->
+        <form class="loginform" action="/loginprocess.php" method="post">
+          <p id="username"><b>Username</b></p>
+          <input type="text" id="usernamebar" name="usernamebar" placeholder="Enter Username" required/>
+          <p id="password"><b>Password</b></p>
+          <input type="text" id="passwordbar" name="passwordbar" placeholder="Enter Password" required/>
+          <button class="loginbtn">Login</button>
+          <p id="extra1" style="font-size: 10px;" >
+            Forgot password? Click <a href="ResetPasswordValid.html">here</a> to reset it.
+          </p>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="rcorners2">
+      <div class="leftside2">
+        <p id="newusers"><b>New Users</b></p>
+        <p id="extra" style="font-size: 10px; text-align: center" ;>
+          Register for access to shopping our online catalogue and special
+          discounts!
+        </p>
+      </div>
+
+      <div class="rightside2">
+        <div class="createaccount">
+          <form>
+          <button class="createtext" formaction="Registration.html">Create an account</button>
+        </form></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+.flex-grid {
+  overflow: scroll;
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+.leftcorners {
+  height: 31%;
+}
+
+.rightcorners {
+  height: 100%;
+  overflow: scroll;
+}
+
+body {
+  overflow: scroll;
+}
+
+.button {
+  height: 15%;
+  width: 35%;
+  position: relative;
+  top: 15%;
+  left: 32%;
+}
+
+.promoCode {
+  padding: 1%;
+}
+
+.close-button-billing,
+.close-button-payment {
+  color: #810b0b;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button-billing:hover,
+.close-button-payment:hover,
+.close-button-billing:focus,
+.close-button-payment:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submitbtn1,
+.submitbtn2 {
+  font-size: 16px;
+  border-radius: 15px;
+  background-color: #810b0b;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.submitbtn1:hover,
+.submitbtn2:hover {
+  opacity: 1;
+}
+
+.book {
+  width: 20%;
+  height: 30%;
+}
+
+.display-info {
+  font-size: large;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.edit-btn {
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

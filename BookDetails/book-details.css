@@ -1,0 +1,177 @@
+
+.dropdown-content {
+    overflow: hidden;
+  display: none;
+  position: absolute;
+  background-color: none;
+  min-width:50x;
+  
+  z-index: 1;
+  float: left;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size:16px;
+}
+
+.user:hover .dropdown-content {
+    display:inline-block;
+    float:left;
+}
+
+
+.header .logo
+{
+    position: absolute;
+    width: 500px;
+    height: 46px;
+    left: 63px;
+    top: 52px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: black;
+}
+
+a
+{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover
+{
+    text-decoration:underline double #0E5A16;
+}
+
+.header .nav-bar
+{    
+   position:absolute;
+    width: 1014px;
+    height: 40px;
+    left: 600px;
+    top: 58px;
+    font-size:24px;
+    color:black;
+}
+
+
+.book-border
+{
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    position: absolute;
+    width: 500px;
+    height: 725px;
+    left: 300px;
+    top: 255px;
+}
+
+.eat-a-peach
+{
+    position: absolute;
+    width: 465.85px;
+    height: 700px;
+    left: 15px;
+    top: 8px;
+}
+
+.eat-a-peach:hover
+{
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    
+}
+
+.book-details
+{
+    padding-left:43px;
+    position:absolute;
+    box-sizing:border-box;
+    width: 609px;
+    height: 700px;
+    left: 900px;
+    top: 265px;
+    background: #FFFFFF;
+    border: 6px solid #810B0B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book-title
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    color: #000000;
+    padding:0px;
+}
+
+.book-author
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+}
+
+.book-line
+{
+    border: 1px solid #0E5A16;
+    background-color:#0E5A16;
+    width: 75%;
+}
+
+.price
+{
+    margin-top:-10px;
+    font-size: 48px;
+}
+
+.overview
+{
+    margin-top:-20px;
+    line-height: 20px;
+    padding-right: 20px;
+}
+
+.add-to-cart
+{
+    text-align: center;
+    color: #FFFFFF;
+    background: #810B0B;
+    border-radius: 15px;
+    width:50%;
+    height:5%;
+    position: inherit;
+    top:87%;
+    left:50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+ li
+{
+    float:left;
+    display:block;
+    text-align:center;
+    padding:14px 35px;
+    text-decoration:none;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
