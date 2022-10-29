@@ -1,0 +1,50 @@
+body {
+  background-color: rgba(147, 184, 146, 0.65);
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 30px;
+  font-size: 5px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.search-bar {
+  width: 300px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.g-block-1 {
+  width: 50%;
+  position: absolute;
+  left: 150px;
+}
+
+.g-block-2 {
+  width: 50%;
+  position: absolute;
+  right: 150px;
+}
+
+#bar {
+  background: white;
+  /*margin: auto; */
+  border-radius: 50px;
+  width: 200px;
+  height: 20px;
+}
